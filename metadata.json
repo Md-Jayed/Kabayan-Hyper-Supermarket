@@ -1,0 +1,7 @@
+{
+  "name": "Kabayan Hypermarket Online",
+  "description": "A premium, secure, and bilingual (English/Arabic) eCommerce platform for Kabayan Hypermarket Jeddah, featuring real-time inventory, secure checkout, and comprehensive admin controls.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
