@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Product, Language, CategoryItem } from '../types';
-import { I18N } from '../constants';
-import ProductCard from '../components/ProductCard';
+import { Product, Language, CategoryItem } from '../types.ts';
+import { I18N } from '../constants.tsx';
+import ProductCard from '../components/ProductCard.tsx';
 import { Filter, ChevronDown, Loader2, X } from 'lucide-react';
 
 interface Props {

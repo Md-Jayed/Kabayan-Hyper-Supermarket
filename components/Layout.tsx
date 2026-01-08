@@ -2,9 +2,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { ShoppingCart, User, Search, MapPin, LayoutDashboard, Menu, X, Trash2, ArrowRight, ChevronDown, Package, Snowflake, Utensils, Coffee, Home as HomeIcon } from 'lucide-react';
-import { Language, CartItem, CategoryItem } from '../types';
-import { LOGO_URL, I18N } from '../constants';
-import LanguageToggle from './LanguageToggle';
+import { Language, CartItem, CategoryItem } from '../types.ts';
+import { LOGO_URL, I18N } from '../constants.tsx';
+import LanguageToggle from './LanguageToggle.tsx';
 
 interface Props {
   lang: Language;

@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Product, Language } from '../types';
-import { I18N } from '../constants';
-import ProductCard from '../components/ProductCard';
+import { Product, Language } from '../types.ts';
+import { I18N } from '../constants.tsx';
+import ProductCard from '../components/ProductCard.tsx';
 import { ArrowRight, Zap, ShieldCheck, Truck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

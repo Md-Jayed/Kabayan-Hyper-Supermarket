@@ -1,6 +1,6 @@
 
 import { createClient } from '@supabase/supabase-js';
-import { Product, CategoryItem } from '../types';
+import { Product, CategoryItem } from '../types.ts';
 
 const supabaseUrl = 'https://pddvhrwknkdujdeluzfc.supabase.co';
 const supabaseKey = 'sb_publishable_UyGbfJ1_uokRwhQXeVUU-g_N8c11SMz';
@@ -57,7 +57,6 @@ export const db = {
       description_ar: product.descriptionAr || '',
     };
 
-    // Use a more robust check for update vs insert (Presence of ID)
     if (product.id) {
       const { data, error } = await supabase
         .from('products')

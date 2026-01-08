@@ -1,17 +1,17 @@
 
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Shop from './pages/Shop';
-import Cart from './pages/Cart';
-import ProductDetail from './pages/ProductDetail';
-import AdminDashboard from './pages/AdminDashboard';
-import Checkout from './pages/Checkout';
-import ThankYou from './pages/ThankYou';
-import { Language, Product, CartItem, CategoryItem } from './types';
-import { PRODUCTS as FALLBACK_PRODUCTS } from './constants';
-import { db } from './lib/supabase';
+import Layout from './components/Layout.tsx';
+import Home from './pages/Home.tsx';
+import Shop from './pages/Shop.tsx';
+import Cart from './pages/Cart.tsx';
+import ProductDetail from './pages/ProductDetail.tsx';
+import AdminDashboard from './pages/AdminDashboard.tsx';
+import Checkout from './pages/Checkout.tsx';
+import ThankYou from './pages/ThankYou.tsx';
+import { Language, Product, CartItem, CategoryItem } from './types.ts';
+import { PRODUCTS as FALLBACK_PRODUCTS } from './constants.tsx';
+import { db } from './lib/supabase.ts';
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('en');
@@ -44,7 +44,6 @@ const App: React.FC = () => {
       if (catRes.data && catRes.data.length > 0) {
         setCategories(catRes.data);
       } else {
-        // Fallback categories if none in DB
         setCategories([
           { id: '1', nameEn: 'Grocery', nameAr: 'بقالة', icon: 'Package' },
           { id: '2', nameEn: 'Frozen', nameAr: 'مجمدات', icon: 'Snowflake' },

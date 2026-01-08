@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Product, Language } from '../types';
-import { I18N, PLACEHOLDER_IMAGE } from '../constants';
+import { Product, Language } from '../types.ts';
+import { I18N, PLACEHOLDER_IMAGE } from '../constants.tsx';
 import { ShoppingCart, Heart } from 'lucide-react';
 
 interface Props {
